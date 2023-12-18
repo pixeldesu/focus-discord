@@ -16,6 +16,7 @@ Just copy the `focus.theme.css` file to your BetterDiscord/Vencord theme directo
 * Typing indicators are removed
 * Unread indicators are removed
 * Unread channels in servers now look no different from read channels
+* Server member list has no displayed groups and everyone is displayed the same
 * Gifting Nitro button in the textarea is removed
 * Nitro link in friends tab is removed
 * Shop link in friends tab is removed

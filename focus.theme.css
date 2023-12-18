@@ -2,7 +2,7 @@
  * @name Focus
  * @author pixeldesu
  * @description A Discord theme that removes a lot of UI distractions
- * @version 0.0.1
+ * @version 0.0.2
  */
 
 /**
@@ -101,4 +101,19 @@ div[class^="channelTextArea__"] div[class^="buttons_"] > div:not(.expression-pic
  */
 div[class^="listItem_"]:has(div[data-list-item-id="guildsnav___guild-discover-button"]) {
   display: none;
+}
+
+/**
+ * Display every server members online status equally
+ */
+h3[class^="membersGroup__"] {
+  display: none;
+}
+
+div[class^="members__"] {
+  padding-block-start: 12px;
+}
+
+[class^="member_"][class*="offline_"] {
+  opacity: initial;
 }
