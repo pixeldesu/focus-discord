@@ -2,14 +2,15 @@
  * @name Focus
  * @author pixeldesu
  * @description A Discord theme that removes a lot of UI distractions
- * @version 0.0.2
+ * @version 0.0.3
  */
 
 /**
  * Removal of any kind of status mask from user avatars 
  */
 mask[id^="svg-mask-avatar-status-round-"] [fill="black"],
-mask[id^="svg-mask-avatar-status-mobile-"] [fill="black"] {
+mask[id^="svg-mask-avatar-status-mobile-"] [fill="black"],
+mask[id^="svg-mask-avatar-decoration-profile-status-square-"] [fill="black"] {
   display: none;
 }
 
@@ -22,6 +23,10 @@ svg[class^="mask__"] rect[mask^="url(#svg-mask-status"] {
 }
 
 svg[class^="cursorDefault_"] {
+  display: none;
+}
+
+[mask^="url(#svg-mask-avatar-status-round-"] ~ circle[fill="white"] {
   display: none;
 }
 
@@ -116,4 +121,18 @@ div[class^="members__"] {
 
 [class^="member_"][class*="offline_"] {
   opacity: initial;
+}
+
+/**
+ * Hide avatar decorations
+ */
+svg[class^="avatarDecoration_"] {
+  display: none;
+}
+
+/**
+ * Hide profile effects
+ */
+div[class^="profileEffects_"] {
+  display: none;
 }
