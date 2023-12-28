@@ -2,7 +2,7 @@
  * @name Focus
  * @author pixeldesu
  * @description A Discord theme that removes a lot of UI distractions
- * @version 0.0.3
+ * @version 0.0.4
  */
 
 /**
@@ -69,6 +69,10 @@ div[class^="userPanelOverlayBackground__"]:has([class^="activityUserPopoutV2"]) 
 }
 
 div[class^="section__"]:has([class^="activityUserPopoutV2"]) {
+  display: none;
+}
+
+div[class^="section__"]:has([class^="customStatus__"]) {
   display: none;
 }
 
